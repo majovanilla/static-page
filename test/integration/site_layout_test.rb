@@ -14,5 +14,5 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select 'title', full_title('Sign up')
     get contact_path
     assert_select 'title', full_title('Contact')
-    end
+  end
 end
