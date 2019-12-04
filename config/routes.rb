@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'password_resets/new'
+
+  get 'password_resets/edit'
+
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
@@ -14,4 +18,5 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
   resources :users
   resources :account_activation, only: [:edit]
+  resources :password_resets, only: [:new, :create, :edit, :update]
 end
