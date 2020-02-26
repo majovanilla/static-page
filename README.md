@@ -40,7 +40,6 @@ $ rails server
 ## Authors
 
 - [Maria Reyes](https://github.com/majovainilla/)
-- [Fabricio Garcia](https://github.com/fabricio-garcia/)
 
 ## Acknowledgments
 
